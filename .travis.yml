@@ -13,4 +13,8 @@ matrix:
         - os: osx
           language: generic
 
+        - os: osx
+          language: generic
+          env: CAN_SUDO=true
+
 script: sh test.sh
