@@ -1,0 +1,7 @@
+language: python
+
+os:
+  - linux
+  - osx
+
+script: python test.py
