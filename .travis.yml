@@ -8,8 +8,9 @@ matrix:
         - os: linux
           sudo: required
           python: 2.6
+          env: CAN_SUDO=true
 
         - os: osx
           language: generic
 
-script: python test.py
+script: sh test.sh
