@@ -1,7 +1,15 @@
 language: python
 
-os:
-  - linux
-  - osx
+matrix:
+    include:
+        - os: linux
+          python: 2.6
+
+        - os: linux
+          sudo: required
+          python: 2.6
+
+        - os: osx
+          language: generic
 
 script: python test.py
