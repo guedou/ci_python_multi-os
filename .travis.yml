@@ -8,13 +8,25 @@ matrix:
         - os: linux
           sudo: required
           python: 2.6
-          env: CAN_SUDO=true
+          env:
+            - CAN_SUDO=true
+
+        - os: linux
+          sudo: required
+          python: 2.6
+          env:
+            - CAN_SUDO=true
+            - DO_PCAPDNET=true
 
         - os: osx
           language: generic
 
         - os: osx
           language: generic
-          env: CAN_SUDO=true
+          env:
+            - CAN_SUDO=true
+            - DO_PCAPDNET=true
+
+install: sh install.sh
 
 script: sh test.sh
