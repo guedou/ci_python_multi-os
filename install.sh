@@ -1,4 +1,4 @@
 if [ ! -z $DO_PCAPDNET ]
 then
-  pip install pcapy dnet
+  pip install pcapy dnet-real
 fi
