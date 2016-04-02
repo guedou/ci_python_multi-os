@@ -2,7 +2,10 @@ if [ ! -z $DO_PCAPDNET ]
 then
   if [ "$TRAVIS_OS_NAME" = "linux" ]
   then
-    sudo apt-get install libpcap-dev
+    sudo apt-get install python-pcapy python-dumbnet
   fi
-  sudo pip install pcapy dnet-real
+  if [ "$TRAVIS_OS_NAME" = "osx" ]
+  then
+    sudo pip install pcapy dnet-real
+  fi
 fi
