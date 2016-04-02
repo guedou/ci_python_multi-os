@@ -6,6 +6,7 @@ then
   fi
   if [ "$TRAVIS_OS_NAME" = "osx" ]
   then
-    sudo pip install pcapy dnet-real
+    sudo brew update
+    sudo brew install pypcap
   fi
 fi
