@@ -10,5 +10,6 @@ then
     echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/travis/Library/Python/2.7/lib/python/site-packages/homebrew.pth
     sudo brew update
     sudo brew install --with-python libdnet
+    sudo pip install pcapy
   fi
 fi
