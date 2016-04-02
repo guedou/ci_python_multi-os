@@ -7,6 +7,6 @@ then
   if [ "$TRAVIS_OS_NAME" = "osx" ]
   then
     sudo brew update
-    sudo brew install pypcap
+    sudo brew install libdnet
   fi
 fi
