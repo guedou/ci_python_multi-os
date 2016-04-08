@@ -13,10 +13,15 @@ except:
     pass
 
 try:
-    import dumbnet
-    sys.modules["dnet"] = dumbnet
-    #import dnet
+    import dnet
     print "dnet is installed"
 except:
     print "dnet is NOT installed"
+    pass
+
+try:
+    import dumbnet
+    print "dumbnet is installed"
+except:
+    print "dumbnet is NOT installed"
     pass
