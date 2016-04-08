@@ -13,6 +13,13 @@ except:
     pass
 
 try:
+    import pcap
+    print "pcap is installed"
+except:
+    print "pcap is NOT installed"
+    pass
+
+try:
     import dnet
     print "dnet is installed"
 except:

@@ -11,6 +11,6 @@ then
  
     brew update
     brew install --with-python libdnet
-    brew install pcapy.rb
+    brew install pylibpcap.rb
   fi
 fi
