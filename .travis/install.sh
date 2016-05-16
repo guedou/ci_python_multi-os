@@ -11,6 +11,6 @@ then
  
     brew update
     brew install --with-python libdnet
-    brew install .travis_files/pylibpcap.rb
+    brew install .travis/pylibpcap.rb
   fi
 fi
