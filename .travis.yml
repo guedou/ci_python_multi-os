@@ -27,6 +27,6 @@ matrix:
             - CAN_SUDO=true
             - DO_PCAPDNET=true
 
-install: sh install.sh
+install: sh .travis_files/install.sh
 
 script: sh test.sh
