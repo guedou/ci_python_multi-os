@@ -32,3 +32,10 @@ try:
 except:
     print "dumbnet is NOT installed"
     pass
+
+try:
+    import Crypto
+    print "pycrypto is installed"
+except:
+    print "pycrypto is NOT installed"
+    pass

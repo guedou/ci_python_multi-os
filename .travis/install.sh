@@ -1,3 +1,5 @@
+pip install --user pycrypto
+
 if [ ! -z $DO_PCAPDNET ]
 then
   if [ "$TRAVIS_OS_NAME" = "linux" ]
