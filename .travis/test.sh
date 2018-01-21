@@ -1,3 +1,11 @@
+if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+  export PATH="/Users/travis/.pyenv/shims:${PATH}"
+  export PYENV_VERSION=3.3.6
+  python --version
+fi
+
+python test.py
+
 if [ -z $CAN_SUDO ]
 then
   python test.py

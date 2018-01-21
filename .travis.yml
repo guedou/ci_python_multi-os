@@ -27,6 +27,12 @@ matrix:
             - CAN_SUDO=true
             - DO_PCAPDNET=true
 
+        - os: osx
+          language: generic
+          env: PYTHON=3.6.4
+
+before_install: sh .travis/osx_py3.sh
+
 install: sh .travis/install.sh
 
 script: sh .travis/test.sh
